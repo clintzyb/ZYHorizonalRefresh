@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZYHorzionalRefresh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYG-gR-kJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="bYh-YT-pJg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BbZ-w0-t2I">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUA-zN-B5r">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="716"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="716" id="kVc-HJ-2g2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DUA-zN-B5r" secondAttribute="bottom" id="fVl-to-3bh"/>
+                                    <constraint firstItem="DUA-zN-B5r" firstAttribute="leading" secondItem="BbZ-w0-t2I" secondAttribute="leading" id="gHr-CW-OKY"/>
+                                    <constraint firstItem="DUA-zN-B5r" firstAttribute="top" secondItem="BbZ-w0-t2I" secondAttribute="top" id="pAN-Do-kZR"/>
+                                    <constraint firstAttribute="trailing" secondItem="DUA-zN-B5r" secondAttribute="trailing" id="pe9-Fj-eKh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BbZ-w0-t2I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HPW-Qv-4kN"/>
+                            <constraint firstAttribute="trailing" secondItem="BbZ-w0-t2I" secondAttribute="trailing" id="ILH-ul-VeH"/>
+                            <constraint firstItem="bYh-YT-pJg" firstAttribute="top" secondItem="BbZ-w0-t2I" secondAttribute="bottom" id="LIk-yh-LuW"/>
+                            <constraint firstItem="DUA-zN-B5r" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Qrr-L3-wgf"/>
+                            <constraint firstItem="BbZ-w0-t2I" firstAttribute="top" secondItem="EYG-gR-kJI" secondAttribute="bottom" id="aSg-0j-7w3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyScroller" destination="BbZ-w0-t2I" id="iSH-vJ-b38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
